@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="20.0" style="-fx-background-color: #eeeeee;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.example.calculadoradedesempenhovesp.TelaCalculoDesempenhoController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/image.png" />
+         </image>
+      </ImageView>
+      <Label text="Média do Bimestre 01:" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField alignment="CENTER" promptText="Digite o valor">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </TextField>
+      <Label text="Média do Bimestre 02:" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField alignment="CENTER" promptText="Digite o valor">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </TextField>
+      <Label text="Média do Bimestre 03:" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField alignment="CENTER" promptText="Digite o valor">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </TextField>
+      <Label text="Média do Bimestre 04:" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField alignment="CENTER" promptText="Digite o valor">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </TextField>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" style="-fx-background-color: #5cb85c; -fx-background-radius: 20;" text="Limpar" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" style="-fx-background-color: #5cb85c; -fx-background-radius: 20;" text="Calcular" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
