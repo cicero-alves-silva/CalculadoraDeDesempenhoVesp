@@ -1,16 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.calculadoradedesempenhovesp.TelaCalculoDesempenhoController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+<VBox alignment="CENTER" spacing="20.0" style="-fx-background-color: #eeeee;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculadoradedesempenhovesp.TelaCalculoDesempenhoController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/vertical-catole-do-rocha.png" />
+         </image>
+      </ImageView>
+      <Label text="Média do Bimestre 01:" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfMediaBimestre1" alignment="CENTER" maxWidth="260.0" promptText="Digite o valor">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </TextField>
+      <Label text="Média do Bimestre 02:" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfMediaBimestre2" alignment="CENTER" maxWidth="260.0" promptText="Digite o valor">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </TextField>
+      <Label text="Média do Bimestre 03:" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfMediaBimestre3" alignment="CENTER" maxWidth="260.0" promptText="Digite o valor">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </TextField>
+      <Label text="Média do Bimestre 04:" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfMediaBimestre4" alignment="CENTER" maxWidth="260.0" promptText="Digite o valor">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </TextField>
+      <HBox alignment="CENTER" spacing="5.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#cliqueLimpar" prefWidth="110.0" style="-fx-background-color: #5cb85c; -fx-background-radius: 20;" text="Limpar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#cliqueCalcular" prefWidth="110.0" style="-fx-background-color: #5cb85c; -fx-background-radius: 20;" text="Calcular" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <Label fx:id="lbResultado" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
 </VBox>
