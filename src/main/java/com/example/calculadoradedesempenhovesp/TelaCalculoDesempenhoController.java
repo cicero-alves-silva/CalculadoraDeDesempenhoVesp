@@ -53,7 +53,27 @@ public class TelaCalculoDesempenhoController {
                             lbResultado.setStyle("-fx-text-fill: #008000");
                         }
                     } else {
-
+                        int mb4 = Integer.parseInt(mb4String);
+                        if (mb4 >= 0 && mb4 <= 100) {
+                            double ma = (mb1 + mb2 + mb3 + mb4) / 4.0;
+                            long maArredondada = Math.round(ma);
+                            if (maArredondada >= 70) {
+                                lbResultado.setText("Média anual " + maArredondada
+                                        + ".\nAPROVADO");
+                                lbResultado.setStyle("-fx-text-fill: #008000");
+                            } else {
+                                double af = (500 - 6 * maArredondada) / 4.0;
+                                long afArredondada = Math.round(af);
+                                lbResultado.setText("Média anual " + maArredondada +
+                                        ".\nVocê precisa de " +
+                                        afArredondada + " na AF.");
+                                lbResultado.setStyle("-fx-text-fill: #FF0000");
+                            }
+                        } else {
+                            lbResultado.setText("As médias precisam ser " +
+                                    "números inteiros de 0 a 100.");
+                            lbResultado.setStyle("-fx-text-fill: #FF0000");
+                        }
                     }
                 } else {
                     lbResultado.setText("As médias precisam ser " +
